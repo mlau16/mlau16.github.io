@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mandy Lau | Software & Game Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div>
+        <p class="eyebrow">Mandy Lau</p>
+        <h1>Software & Game Developer</h1>
+        <p class="subtitle">
+          UC Santa Cruz Computer Science: Game Design student (Graduating June 2026).  
+          I build web apps, tools, and game prototypes that focus on interaction,
+          polish, and system design.
+        </p>
+        <div class="header-links">
+          <a href="mailto:mlau16@ucsc.edu" class="btn">Email Me</a>
+          <a href="https://github.com/mlau16" class="link">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container grid-two">
+        <div>
+          <h2>About</h2>
+          <p>
+            I’m a third-year CS: Game Design student at UC Santa Cruz
+            interested in software engineering, game development, and tools that
+            support creators. I enjoy working close to the code: designing
+            systems, refactoring existing projects, and learning how different
+            engines and frameworks are built under the hood.
+          </p>
+          <p>
+            Recently I’ve been focusing on web backends, single-page apps, and
+            small games that explore interaction and feedback loops.
+          </p>
+        </div>
+        <div>
+          <h2>Skills</h2>
+          <ul class="pill-list">
+            <li>JavaScript / TypeScript</li>
+            <li>Python</li>
+            <li>HTML / CSS</li>
+            <li>Vue / SPA development</li>
+            <li>Phaser / Unity</li>
+            <li>REST APIs & JSON</li>
+            <li>Git / GitHub</li>
+            <li>Testing & Refactoring</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <p class="section-intro">
+          A few projects that show how I approach building systems, UI, and
+          gameplay. Repositories available on GitHub.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <h3>Cat Clicker Game</h3>
+            <p class="project-meta">TypeScript, DOM / Canvas, Game Design</p>
+            <p>
+              A browser-based incremental game focused on playful UX and clear
+              feedback. Includes upgrade systems and animated UI.
+            </p>
+            <ul>
+              <li>Implemented game loop and upgrade balancing.</li>
+              <li>Polished UI with responsive layout and custom styling.</li>
+            </ul>
+            <a href="https://github.com/mlau16/cmpm-121-f25-d1" class="link project-link">
+              View on GitHub
+            </a>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <h3>Napstronaut – Phaser Game</h3>
+            <p class="project-meta">Phaser, TypeScript, Game Programming</p>
+            <p>
+                A cozy pixel platformer where you guide a sleepy alien astronaut through three
+                hand-crafted levels. Built with Phaser’s Arcade Physics, the game focuses on
+                smooth movement, gentle rhythm, and soft environmental feedback using Kenney assets. 
+            </p>
+            <ul>
+              <li>Implemented custom player physics, collision tuning, and responsive jump feel.</li>
+              <li>Created modular scene flows for transitions, interactions, and game states.</li>
+            </ul>
+            <a href="https://github.com/mlau16/Napstronaut" class="link project-link">
+              View on GitHub
+            </a>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <h3>Unity Cleaning Game Prototype</h3>
+            <p class="project-meta">Unity, C#, Interaction Systems</p>
+            <p>
+              A prototype where the player cleans up a crime scene. I
+              implemented click-to-scrub mechanics and interaction logic
+              between objects and the environment.
+            </p>
+            <ul>
+              <li>Used C# scripts with Unity event systems.</li>
+              <li>Experimented with feedback and game feel.</li>
+            </ul>
+            <a href="https://github.com/mlau16/Prototype3-MurderScene" class="link project-link">
+              View on GitHub
+            </a>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <h3>Location-Based Token Merge Game</h3>
+            <p class="project-meta">Leaflet, TypeScript, Web Mapping</p>
+            <p>
+              A grid-based game using real-world location data. Players move
+              around a map, interact with nearby cells, and merge tokens to
+              reach higher values.
+            </p>
+            <ul>
+              <li>Implemented custom grid logic over map coordinates.</li>
+              <li>Handled UI state for held/dropped tokens.</li>
+            </ul>
+            <a href="https://github.com/mlau16/cmpm-121-f25-d3" class="link project-link">
+              View on GitHub
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+            I’m actively looking for software engineering and 
+            game development internships or entry-level positions 
+            where I can contribute and continue growing my skills.
+        </p>
+        <p>
+          The best way to reach me is by email at
+          <a href="mailto:mlau16@ucsc.edu" class="link">mlau16@ucsc.edu</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mandy Lau</p>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
